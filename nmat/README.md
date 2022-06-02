@@ -3,12 +3,12 @@ In this project I take old, boring, well known nmap ideas and create my own, bra
 
 Brace yourself for the scanning, that is coming.
 
-##How it works
+## How it works
 1. First is ICMP echo requerst scan (prepares active host IP list). It can be skipped.
 2. For next scans you can use active hosts list from ICMP, or enter your own range of addresses
 3. Ports are always entered manually
 
-##To do:
+## To do:
 - threading
 - cleaning code (old comments, unused code)
 - make IP&ports selection even more usable
