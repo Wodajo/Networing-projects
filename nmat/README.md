@@ -1,5 +1,5 @@
 # NMAT
-In this project I take old, boring, well known nmap ideas and create my own, brand new, exciting version.
+In this project I take old, boring, well known nmap ideas and create my own, brand new exciting version.
 
 Brace yourself for the scanning, that is coming.
 
