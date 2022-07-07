@@ -1,0 +1,1 @@
+Place for GNS3 testing notes. From simpliest networks to whole infrastructures - if it's in GNS3 it belong here

@@ -1,1 +1,6 @@
-Place for GNS3 testing notes. From simpliest networks to whole infrastructures - if it's in GNS3 it belong here
+Cisco IOS (Internetwork Operating System)
+Cisco IOU (IOS on UNIX)
+
+GNS3 VM - Cisco IOU (allows to use Cisco routers and swiches) & QEMU
+dynamips also can run here
+local computer - dynamips, some QEMU
