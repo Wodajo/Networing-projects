@@ -39,7 +39,7 @@ Vlan    Mac Address       Type        Ports
    1    aabb.cc00.0200    DYNAMIC     Et0/1
 Total Mac Addresses for this criterion: 3
 ```
-I have NO idea what "`aabb.cc00.0200`" is
+"`aabb.cc00.0200`" is `Switch2` (switches don't have to have `MAC`, but it's neccessary for `Spanning Tree Protocol`)
 other 2 are artefacts after "Checking for duplicate address..."
 
 `Switch1#clear mac address-table dynamic`

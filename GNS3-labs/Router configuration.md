@@ -10,7 +10,7 @@ by default `startup-config` router start with `privileged EXEC mode`. We want `u
 `configure terminal` to enter `global config mode`
 `line console 0` - direct changes in `running-config`
 `no privilege level 15`
-`exit` to privileged EXEC mdoe
+`exit` to privileged EXEC mode
 `write` to write `running config` into `startup-config` (or `write memory` or `copy running-config startup-config`)
 `exit` to user EXEC mode
 
@@ -41,4 +41,33 @@ in `global config mode` (obviously):
 
 If both `enable secret` and `enable password` are configured - only `enable secret` can be used
 
-#### 
+#### configure ip
+`show ip interface brief` - to see what we have. output explanaition in "intro to cli" note
+`interface FastEthernet0/0` - configure that interface
+`ip address 10.255.255.254 255.0.0.0` - assign IP address with that subnet mask
+`no shutdown` - router interfaces are shutdown-disabled bydefault. BUT not switches
+`do show ip interface brief` - check how are things now. 
+```
+R1>show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES unset  administratively down down
+FastEthernet1/0            unassigned      YES unset  administratively down down
+R1>en
+Password:
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip address 10.255.255.254 ?
+  A.B.C.D  IP subnet mask
+
+R1(config-if)#ip address 10.255.255.254 255.0.0.0
+R1(config-if)#no shutdown
+R1(config-if)#
+*Sep 26 18:37:14.203: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up      ---> Layer 1 status change
+*Sep 26 18:37:15.203: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up   ---> Layer 2 status change
+R1(config-if)#do show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.255.255.254  YES manual up                    up
+FastEthernet1/0            unassigned      YES unset  administratively down down
+```
+
