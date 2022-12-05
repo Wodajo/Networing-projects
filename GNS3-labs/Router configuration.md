@@ -1,6 +1,6 @@
 default `startup-config` has  
 ```
-priviledge level 15
+privilege level 15
 ```
 That's why router automatically start in `privileged EXEC mode`
 
