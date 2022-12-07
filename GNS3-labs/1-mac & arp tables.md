@@ -53,5 +53,5 @@ Vlan    Mac Address       Type        Ports
    1    aabb.cc00.0200    DYNAMIC     Et0/1
 Total Mac Addresses for this criterion: 1
 ```
-it survieved dynamic entries cleance! Wierd
-
+it survieved dynamic entries cleance!
+seems like spanning tree protocol-generated MACs (of switches) can survive this

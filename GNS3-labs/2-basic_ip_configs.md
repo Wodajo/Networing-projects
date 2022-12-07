@@ -162,8 +162,9 @@ What is happening:
   1. If Switch1 don't have that IP-MAC pair in ARP  table:
      ARP request (des. FFFF.FFFF.FFFF) -> broadcast in LAN
   1.  IF Switch1 have IP-MAC pair in ARP table:
-	  **FINISH THIIIIIIS**
-
+	ICMP echo request encapsulated into eth. frame with proper dst. MAC
+unicast frame is forwarded as in MAC tables of networkind devices between.
+if unknown unicast frame - broadcasted
 ```
 PC2> ping 10.0.0.2
 84 bytes from 10.0.0.2 icmp_seq=1 ttl=63 time=22.460 ms

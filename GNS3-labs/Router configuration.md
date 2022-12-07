@@ -71,3 +71,13 @@ FastEthernet0/0            10.255.255.254  YES manual up                    up
 FastEthernet1/0            unassigned      YES unset  administratively down down
 ```
 
+`speed 100` since that's Fast Ethernet (WHAT WITH `speed auto` option?)
+`duplex full` - it's attached to switches. half-duplex is only necessairy if connected to a hub
+
+`interface range fa1/0 - 1` 
+`description SOMETHING` - (e.g. ## not in use ##)
+
+to check changes:
+`show interfaces description` - interface, status (L1), protocol(L2), description
+`do show interfaces fa0/0` -  details about interface
+`do show run`
