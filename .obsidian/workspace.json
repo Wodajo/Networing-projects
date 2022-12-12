@@ -122,15 +122,15 @@
   },
   "active": "3a0b8cf306bab2a3",
   "lastOpenFiles": [
-    "GNS3-labs/3-basic_config_vol2.md",
+    "GNS3-labs/Switch configuration.md",
     "GNS3-labs/Router configuration.md",
     "GNS3-labs/2-basic_ip_configs.md",
+    "GNS3-labs/virtual PC simulator configuration.md",
+    "GNS3-labs/4-routing_exc.md",
+    "GNS3-labs/3-basic_config_vol2.md",
     "GNS3-labs/1-mac & arp tables.md",
     "GNS3-labs/notes.md",
-    "GNS3-labs/Switch configuration.md",
-    "GNS3-labs/virtual PC simulator configuration.md",
     "GNS3-labs/README.md",
-    "nmat/README.md",
-    "socket-programming/README.md"
+    "nmat/README.md"
   ]
 }

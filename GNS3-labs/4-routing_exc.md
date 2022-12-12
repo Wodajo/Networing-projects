@@ -483,7 +483,7 @@ C    192.168.3.0/24 is directly connected, FastEthernet1/0
 
 
 #### route testing
- IMPORTANT - VPCS need to know default gateway.
+ IMPORTANT - VPCS *need* to know default gateway.
  
  I have no idea how to make them know it
 
@@ -498,3 +498,5 @@ Sending 5, 100-byte ICMP Echos to 192.168.3.1, timeout is 2 seconds:
 Success rate is 100 percent (5/5), round-trip min/avg/max = 56/94/116 ms
 
 ```
+
+knowledge of default gateway is needed, bcos PC has to encapsulate frame with some MAC -> when packet is meant for sth outside LAN it should be encapsulated in frame with default gateway's MAC.

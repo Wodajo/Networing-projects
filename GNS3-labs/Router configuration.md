@@ -81,3 +81,9 @@ to check changes:
 `show interfaces description` - interface, status (L1), protocol(L2), description
 `do show interfaces fa0/0` -  details about interface
 `do show run`
+
+
+#### to easly change sth
+`show running-config | include ip route` -> include works like grep
+you can then copy what is the config file, and, in `global config mode`, paste it with prepending `no`
+`include` won't fetch `ip route` if it's prepended with `no`
